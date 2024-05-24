@@ -1,0 +1,33 @@
+.drawer-container {
+  height: 100%;
+  padding: 0px;
+  background-color: #EFEFEF;
+}
+
+.navbar{
+  height: fit-content;
+  overflow: hidden;
+  padding: 0px;
+  padding: 0px 10px 0px 10px;
+}
+
+.example-toolbar{
+  border-radius: 0px 0px 15px 15px;
+  background-color: #ff715b;
+  color: white;
+}
+
+.sidenav {
+  background-color: #4c5b5c;
+  color: white;
+  width: 15%;
+  
+}
+
+mat-icon{
+  transform: scale(2);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}

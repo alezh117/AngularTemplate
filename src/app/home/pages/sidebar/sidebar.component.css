@@ -1,0 +1,108 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh; /* Asegúrate de que ocupe toda la altura de la ventana */
+    text-align: center;
+    overflow: hidden;
+}
+
+.tituloBurguerSidebar{
+  cursor: pointer;
+  font-weight: 500;
+  font-size: large;
+  padding-top: 18px;
+  text-align: start;
+}
+
+.divP{
+  width: 130px;
+  padding: 0px;
+}
+
+.pTitle{
+  padding: 0px;
+}
+
+.listStyle{
+  border-radius: 20px;
+  text-align: start;
+  padding: 5px;
+}
+
+.containerMatIcon{
+  padding: 0px;
+}
+
+.buttonStyle{
+  padding: 10px;
+  text-align: start;
+}
+
+.logo{
+  width: 120px;
+  border-radius: 100%;
+  margin: 20px 10px 10px 10px;
+}
+
+h1{
+    margin-top: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+.adressList{
+    
+    width: 90%;
+}
+
+.listItem{    
+    font-size: 18px;
+}
+
+.buttonList{ 
+    border-radius: 15px;
+    width: 90%;
+    margin: 2px 0px;
+}
+
+.logOutButton {
+    position: absolute;
+    bottom: 50px;
+    height: 50px;
+}
+
+.menu-button {
+    transition: 300ms ease-in-out;
+    transform: rotate(0deg);
+  }
+
+.menu-button.rotated {
+    transform: rotate(180deg);
+  }
+
+  .submenu-container {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.1s ease-in-out, opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+.icon-display{
+  transform: scale(2);
+  color: white;
+  width: 20px;
+  margin: 0px;
+}
+
+  .submenu-container.expanded {
+    max-height: 1000px; /* Suficientemente grande para contener los subítems */
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .submenu {
+    padding: 0;
+  }
+

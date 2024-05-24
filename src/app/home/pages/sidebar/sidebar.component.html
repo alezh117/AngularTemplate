@@ -1,0 +1,31 @@
+<div class="sidebar">
+  <img class="logo" src="../../../../assets/metatronlogin.png">
+  <mat-nav-list>
+    <mat-list (click)="showSubmenu = !showSubmenu" class="full-width parent tituloBurguerSidebar">
+      <div class="row">
+        <div class="col-6 divP">
+          <p class="pTitle">Entrada Datos</p>
+        </div>
+        <div class="col-4 containerMatIcon">
+          <mat-icon
+            class="menu-button"
+            [ngClass]="{ rotated: showSubmenu }"        
+            >expand_more
+          </mat-icon>
+        </div>
+      </div>
+    </mat-list>
+
+    <div class="submenu-container" [ngClass]="{ 'expanded': showSubmenu }">
+      <li class="listStyle" *ngFor="let item of entradaDatos">
+          <button closed #drawer boton class="buttonStyle" color="white" mat-button (click)="redirectTo(item.url) ">
+            {{ item.name }}
+          </button>
+      </li>
+    </div>
+    </mat-nav-list>
+
+  <button mat-button class="logOutButton" (click)="logOut()">
+    <mat-icon class="icon-display" fontIcon="logout"></mat-icon>
+  </button>
+</div>
